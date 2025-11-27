@@ -1,4 +1,18 @@
-<h1>Github Page</h1>
-<a href="Pagina_extraccion.html">Ver análisis 1</a>
-<br>
-<a href="Pagina_visualizacion.html">Ver análisis 2</a>
+<h1>Proyecto grupo 10</h1>
+
+<button onclick="show('extraccion')">Notebook 1</button>
+<button onclick="show('visualizacion')">Notebook 2</button>
+<div id="extraccion">
+  <iframe src="Pagina_extraccion.html" width="100%" height="800px"></iframe>
+</div>
+<div id="visualizacion" style="display:none">
+  <iframe src="Pagina_visualizacion.html" width="100%" height="800px"></iframe>
+</div>
+<script>
+function show(id){
+  document.getElementById("extraccion").style.display = "none";
+  document.getElementById("visualizacion").style.display = "none";
+  document.getElementById(id).style.display = "block";
+}
+</script>
+
